@@ -40,7 +40,7 @@ const ordersController = require("./controllers/orders");
  * API keys and Passport configuration.
  */
 // const passportConfig = require("./config/passport");
-const connection = require("./config/connection");
+// const connection = require("./config/connection");
 
 /**
  * Create Express server.
