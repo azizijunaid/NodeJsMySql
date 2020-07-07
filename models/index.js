@@ -1,7 +1,7 @@
 const dbConfig = {
-  HOST: process.env.OPENSHIFT_NODEJS_IP || "localhost",
-  USER: "root",
-  PASSWORD: "root",
+  HOST: "localhost" || "http://sql12.freemysqlhosting.net/",
+  USER: "sql12353213",
+  PASSWORD: "K5bhyrDx3f",
   DB: "orderdb",
   dialect: "mysql",
   pool: {
