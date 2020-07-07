@@ -55,6 +55,10 @@ app.put("/orders/:id", ordersController.updateOrder); //update order by id
 
 app.delete("/orders/:id", ordersController.deleteOrder); //delete order by id
 
+app.get("/port", (res, res) => {
+  res.send({ data: `${app.get("port")}` });
+});
+
 /**
  * Error Handler.
  */

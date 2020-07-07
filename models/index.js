@@ -1,5 +1,5 @@
 const dbConfig = {
-  HOST: "localhost",
+  HOST: process.env.OPENSHIFT_NODEJS_IP || "localhost",
   USER: "root",
   PASSWORD: "root",
   DB: "orderdb",
