@@ -1,8 +1,8 @@
 const dbConfig = {
-  HOST: "localhost" || "http://sql12.freemysqlhosting.net/",
+  HOST: "http://sql12.freemysqlhosting.net/",
   USER: "sql12353213",
   PASSWORD: "K5bhyrDx3f",
-  DB: "sql12353213",
+  DB: "orderdb",
   dialect: "mysql",
   pool: {
     max: 5,
