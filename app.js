@@ -30,7 +30,7 @@ const app = express();
 /**
  * Express configuration.
  */
-app.set("host", process.env.OPENSHIFT_NODEJS_IP || "0.0.0.0");
+app.set("host", "http://sql12.freemysqlhosting.net" || "0.0.0.0");
 app.set("port", process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080);
 
 app.use(compression());
