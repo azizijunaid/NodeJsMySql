@@ -1,8 +1,8 @@
 const dbConfig = {
-  HOST: "ec2-34-224-229-81.compute-1.amazonaws.com",
-  USER: "porzxkwjymelco",
-  PASSWORD: "3cf74321ad843ae8779c512ee1af86137530564a13c287b3b229906008128e78",
-  DB: "ddpq6na2p695br",
+  HOST: "ec2-18-214-211-47.compute-1.amazonaws.com",
+  USER: "usqolmkfaxdsvw",
+  PASSWORD: "91f21b0c827c77b80a7ee36438130572154e969a40851f2dbf03cd4d08da2b4a",
+  DB: "d1j7njooh0300j",
   dialect: "mysql",
   port: process.env.PORT || 3306,
   pool: {
