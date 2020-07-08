@@ -54,7 +54,7 @@ exports.addOrder = async (req, res) => {
 
 exports.getOrderById = async (req, res) => {
   const {
-    query: { id },
+    params: { id },
   } = req;
   try {
     const data = await Orders.findByPk(id);

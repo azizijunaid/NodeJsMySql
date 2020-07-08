@@ -2,7 +2,11 @@ const dbConfig = {
   HOST: "sql12.freemysqlhosting.net",
   USER: "sql12353213",
   PASSWORD: "K5bhyrDx3f",
-  DB: "sql12353213",
+  // DB: "sql12353213",
+  // HOST: "localhost",
+  // USER: "root",
+  // PASSWORD: "root",
+  // DB: "orderdb",
   dialect: "mysql",
   pool: {
     max: 5,
@@ -33,5 +37,13 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.Orders = require("./orders.model.js")(sequelize, Sequelize);
+
+sequelize
+  .authenticate()
+  .then(() => console.log("conection success"))
+  .catch((err) => {
+    console.log(err);
+    process.exit(1);
+  });
 
 module.exports = db;
