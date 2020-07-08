@@ -2,7 +2,7 @@ const dbConfig = {
   HOST: "sql12.freemysqlhosting.net",
   USER: "sql12353213",
   PASSWORD: "K5bhyrDx3f",
-  // DB: "sql12353213",
+  DB: "sql12353213",
   // HOST: "localhost",
   // USER: "root",
   // PASSWORD: "root",
