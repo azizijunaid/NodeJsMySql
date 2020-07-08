@@ -58,7 +58,7 @@ exports.getOrderById = async (req, res) => {
   } = req;
   try {
     const data = await Orders.findByPk(id);
-    if (data === 0) {
+    if (data === 0 || data === null) {
       throw new Error("id not found");
     } else {
       res.send(data);

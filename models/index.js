@@ -1,12 +1,33 @@
+// const dev = {
+//   HOST: "localhost",
+//   USER: "root",
+//   PASSWORD: "root",
+//   DB: "orderdb",
+//   dialect: "mysql",
+// };
+
+const config = {
+  dev: {
+    HOST: "localhost",
+    USER: "root",
+    PASSWORD: "root",
+    DB: "orderdb",
+    dialect: "mysql",
+  },
+  prod: {
+    HOST: "sql12.freemysqlhosting.net",
+    USER: "sql12353213",
+    PASSWORD: "K5bhyrDx3f",
+    DB: "sql12353213",
+    dialect: "mysql",
+  },
+};
+
 const dbConfig = {
-  HOST: "sql12.freemysqlhosting.net",
-  USER: "sql12353213",
-  PASSWORD: "K5bhyrDx3f",
-  DB: "sql12353213",
-  // HOST: "localhost",
-  // USER: "root",
-  // PASSWORD: "root",
-  // DB: "orderdb",
+  HOST: config["prod"].HOST,
+  USER: config["prod"].USER,
+  PASSWORD: config["prod"].PASSWORD,
+  DB: config["prod"].DB,
   dialect: "mysql",
   pool: {
     max: 5,
