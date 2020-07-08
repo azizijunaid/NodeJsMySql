@@ -57,10 +57,10 @@ exports.getOrderById = async (req, res) => {
     params: { id },
   } = req;
   try {
+    const data = await Orders.findByPk(id);
     if (data === 0) {
       throw new Error("id not found");
     } else {
-      const data = await Orders.findByPk(id);
       res.send(data);
     }
   } catch (err) {
