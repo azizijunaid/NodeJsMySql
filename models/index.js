@@ -1,9 +1,10 @@
 const dbConfig = {
-  HOST: "http://sql12.freemysqlhosting.net",
+  HOST: "localost",
   USER: "sql12353213",
   PASSWORD: "K5bhyrDx3f",
   DB: "sql12353213",
   dialect: "mysql",
+  port: process.env.PORT || 3306,
   pool: {
     max: 5,
     min: 0,
