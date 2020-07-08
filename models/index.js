@@ -1,10 +1,9 @@
 const dbConfig = {
-  HOST: "ec2-18-214-211-47.compute-1.amazonaws.com",
-  USER: "usqolmkfaxdsvw",
-  PASSWORD: "91f21b0c827c77b80a7ee36438130572154e969a40851f2dbf03cd4d08da2b4a",
-  DB: "d1j7njooh0300j",
+  HOST: "sql12.freemysqlhosting.net",
+  USER: "sql12353213",
+  PASSWORD: "K5bhyrDx3f",
+  DB: "sql12353213",
   dialect: "mysql",
-  port: process.env.PORT || 3306,
   pool: {
     max: 5,
     min: 0,
